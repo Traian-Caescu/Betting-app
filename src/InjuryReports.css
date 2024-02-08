@@ -1,0 +1,40 @@
+.injury-reports {
+    margin: 40px auto;
+  }
+  
+  .injury-reports h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .injury-report h3 {
+    color: #444;
+    margin: 20px 0;
+  }
+  
+  .injury-report ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .injury-report li {
+    background: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+  
+  .injury-report li span {
+    display: block;
+  }
+  
+  .injury-report .injury {
+    font-weight: bold;
+    color: #e74c3c;
+  }
+  
+  .injury-report .return-date {
+    font-style: italic;
+    color: #7f8c8d;
+  }
+  

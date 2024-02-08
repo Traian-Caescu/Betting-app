@@ -1,0 +1,48 @@
+.potential-lineups {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .team-lineups {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .team-lineup {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .team-lineup h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .formation {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+  }
+  
+  .player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .player img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    border-radius: 50%;
+    margin-bottom: 5px;
+  }
+  
+  .player span {
+    font-size: 0.8em;
+  }
+  
+  /* Add media queries and additional styling for hover effects, position classes, etc. */
+  

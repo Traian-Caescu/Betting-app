@@ -1,0 +1,50 @@
+.match-summary {
+    background-color: #f0f2f5; /* Light background to distinguish the section */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin: 20px auto;
+    max-width: 800px; /* Ensures the content is not too stretched on wider screens */
+    text-align: center; /* Center-aligns the content for focus */
+  }
+  
+  .match-summary h2 {
+    color: #333;
+    margin-bottom: 15px; /* Spacing between the title and the details */
+  }
+  
+  .match-details {
+    color: #555; /* Slightly darker text for contrast */
+    font-size: 16px; /* Ideal for readability */
+  }
+  
+  .match-details strong {
+    color: #222; /* Stronger color for emphasis */
+  }
+  
+  .teams h3 {
+    background-color: #007bff; /* Theme color for emphasis */
+    color: #ffffff; /* White text for contrast */
+    padding: 10px 0;
+    margin-top: 20px; /* Separation from other details */
+    border-radius: 4px; /* Slight rounding of edges */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adds depth to the team names */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for interaction */
+  }
+  
+  .teams h3:hover {
+    transform: scale(1.05); /* Slight increase in size on hover for interaction feedback */
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .match-summary {
+      padding: 15px;
+      margin: 20px;
+    }
+  
+    .match-details {
+      font-size: 14px; /* Slightly smaller font size for compact spaces */
+    }
+  }
+  

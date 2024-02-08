@@ -1,0 +1,56 @@
+.match-statistics {
+    background-color: #fff; /* Clean background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    margin: 30px auto;
+    max-width: 900px; /* Optimal width for readability */
+    text-align: center; /* Center-aligns the content */
+  }
+  
+  .match-statistics h2 {
+    color: #2c3e50; /* Dark, sophisticated blue */
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  .statistics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between stats */
+    padding: 0;
+  }
+  
+  .statistic {
+    background-color: #f8f9fa; /* Slightly off-white for distinction */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Lighter shadow for each stat */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .statistic:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .statistic h3 {
+    color: #333;
+    margin-bottom: 15px; /* Spacing under the stat title */
+    font-size: 1.5rem; /* Slightly larger font for emphasis */
+  }
+  
+  .statistic-values {
+    display: flex;
+    justify-content: space-around; /* Evenly space the home and away values */
+    font-size: 1.2rem; /* Larger font size for visibility */
+    color: #555; /* Dark grey for contrast */
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .statistics-grid {
+      grid-template-columns: 1fr; /* Stack statistics on smaller screens */
+    }
+  }
+  

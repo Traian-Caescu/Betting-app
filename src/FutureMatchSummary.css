@@ -1,0 +1,22 @@
+.future-match-summary {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .future-match-summary h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .future-match-summary .match-details p {
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  .future-match-summary .match-details h3 {
+    color: #444;
+    margin-top: 15px;
+  }
+  

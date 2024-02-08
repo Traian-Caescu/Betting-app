@@ -1,0 +1,124 @@
+/* Base Navigation Bar Styles */
+.navigation-bar {
+  background-color: #20232a; /* Darker shade for a sleek look */
+  padding: 10px 0;
+  font-size: 16px;
+  display: flex; /* Flex layout to align items horizontally */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center vertically */
+  flex-wrap: wrap; /* Enable wrapping for smaller screens */
+}
+
+.navigation-bar ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none; /* Remove default list styles */
+  align-items: center;
+}
+
+.navigation-bar li {
+  margin: 0 20px;
+}
+
+.navigation-bar a {
+  color: #ffffff; /* White text color for links */
+  text-decoration: none;
+  padding: 10px 20px; /* Increased padding for better clickability */
+  border-radius: 6px; /* Rounded edges */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.navigation-bar a:hover,
+.navigation-bar a:focus {
+  background-color: #61dafb; /* Light blue background on hover/focus */
+  color: #20232a; /* Dark text color for contrast */
+  outline: none; /* Removing outline to keep the design clean */
+}
+
+.project-name {
+  color: #61dafb; /* Match link color */
+  font-size: 24px; /* Larger font size for project name */
+  font-weight: bold; /* Bold font weight for emphasis */
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 2px; /* Spacing between letters */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navigation-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navigation-bar ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navigation-bar li {
+    text-align: center;
+    width: 100%;
+  }
+
+  .navigation-bar a {
+    display: block; /* Make links fill their container */
+  }
+
+  .project-name {
+    margin-bottom: 20px; /* Add space between name and nav items */
+  }
+}
+/* Existing styles remain unchanged */
+
+/* Dropdown Styles */
+.navigation-bar .dropdown {
+  position: relative; /* Needed for absolute positioning of the dropdown content */
+}
+
+.navigation-bar .dropdown button {
+  background: none;
+  border: none;
+  color: #ffffff; /* Inherits the link color */
+  padding: 10px 20px; /* Matching the padding of other links */
+  font-size: 16px; /* Ensure consistent font sizing */
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content li {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content li a {
+  color: #333; /* Darker text for dropdown items */
+  padding: 0; /* Remove padding for dropdown links */
+}
+
+.dropdown-content li:hover {
+  background-color: #ddd;
+}
+
+/* Adjust dropdown button hover */
+.navigation-bar .dropdown button:hover,
+.navigation-bar .dropdown button:focus {
+  background-color: #61dafb; /* Light blue background on hover/focus */
+  color: #20232a;
+}
+
+/* Add this new rule for hover state */
+.navigation-bar .dropdown:hover .dropdown-content {
+  display: block;
+}

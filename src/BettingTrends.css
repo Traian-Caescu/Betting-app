@@ -1,0 +1,26 @@
+.betting-trends {
+    background-color: #fff; /* Clean background for the chart */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    margin: 30px auto;
+    max-width: 1000px; /* Optimal width for the chart */
+    text-align: center; /* Ensures title and chart are aligned */
+  }
+  
+  .betting-trends h2 {
+    color: #34495e; /* Consistent dark blue for headings */
+    margin-bottom: 20px; /* Space between heading and chart */
+    font-size: 2rem; /* Emphasized font size for heading */
+  }
+  
+  /* Additional styling might be needed based on the chart library's capabilities.
+     This basic setup ensures the component aligns with the modern aesthetic of the page. */
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .betting-trends {
+      padding: 20px;
+    }
+  }
+  

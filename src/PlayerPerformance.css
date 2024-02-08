@@ -1,0 +1,55 @@
+.player-performance {
+    background-color: #fff; /* Clean background for contrast */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    margin: 30px auto;
+    max-width: 1000px; /* Optimal width for layout */
+    text-align: center; /* Center-aligns the content */
+  }
+  
+  .player-performance h2 {
+    color: #34495e; /* Elegant dark blue */
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  .players-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Responsive grid for player cards */
+    gap: 20px; /* Space between player cards */
+    padding: 0;
+  }
+  
+  .player-stat {
+    background-color: #f8f9fa; /* Slightly off-white for the cards */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Light shadow for each card */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .player-stat:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .player-stat h3 {
+    color: #2c3e50; /* Dark blue for player names */
+    font-size: 1.4rem;
+    margin-bottom: 15px; /* Spacing under the player name */
+  }
+  
+  .player-stat p {
+    color: #596869; /* Soft grey for statistics */
+    font-size: 1rem;
+    margin: 5px 0; /* Spacing between stats for readability */
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .players-grid {
+      grid-template-columns: 1fr; /* Stack cards on smaller screens */
+    }
+  }
+  
